@@ -1,38 +1,26 @@
-.App {
-  text-align: center;
+header {
+  background: url(./img/man.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 1000px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.section {
+  padding-top: 4vw;
+  padding-bottom: 4vw;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media screen and (max-width: 670px) {
+  header {
+    min-height: 500px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.tabs .indicator {
+  background-color: #1a237e;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.tabs .tab a:focus,
+.tabs .tab a:focus.active {
+  background: transparent;
 }

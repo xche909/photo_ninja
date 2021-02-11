@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import Navbar from "./Components/Navbar";
+import PhotoGrid from "./Components/PhotoGrid";
+import Parallax from "./Components/Parallax";
+import Stars from "./img/stars.jpg";
+import Street from "./img/street.jpg";
+import Tabs from "./Components/Tabs";
+import Forms from "./Components/Forms";
+import Footer from "./Components/Footer";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Navbar />
+      <PhotoGrid />
+      <Parallax pic={Stars} />
+      <Tabs />
+      <Parallax pic={Street} />
+      <Forms />
+      <Footer />
     </div>
   );
 }
